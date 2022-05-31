@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Moons\\joan.net\\webapi\\webapi.csproj": {}
+    "C:\\joan.net\\prueba\\webapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Moons\\joan.net\\webapi\\webapi.csproj": {
+    "C:\\joan.net\\prueba\\webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Moons\\joan.net\\webapi\\webapi.csproj",
+        "projectUniqueName": "C:\\joan.net\\prueba\\webapi.csproj",
         "projectName": "webapi",
-        "projectPath": "C:\\Users\\Moons\\joan.net\\webapi\\webapi.csproj",
-        "packagesPath": "C:\\Users\\Moons\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Moons\\joan.net\\webapi\\obj\\",
+        "projectPath": "C:\\joan.net\\prueba\\webapi.csproj",
+        "packagesPath": "C:\\Users\\Joan-Sistemas\\.nuget\\packages\\",
+        "outputPath": "C:\\joan.net\\prueba\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Moons\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Joan-Sistemas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,6 +40,18 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -68,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

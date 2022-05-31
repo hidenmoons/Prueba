@@ -6,6 +6,7 @@ namespace webapi.Controllers;
 [Route("api/[controller]")]
 public class HelloWorldController: ControllerBase{
 
+//private readonly ILogger<HelloWorldController> _logger;
 IHelloWorldService helloWorldService;
 
 public HelloWorldController(IHelloWorldService helloWorld)
@@ -13,9 +14,10 @@ public HelloWorldController(IHelloWorldService helloWorld)
     helloWorldService = helloWorld;
 
 }
-
+[HttpGet]
 public IActionResult Get()
 {
+   // _logger.LogInformation("Retornando hello world");
     return Ok(helloWorldService.GetHelloWorld());
 }
 
