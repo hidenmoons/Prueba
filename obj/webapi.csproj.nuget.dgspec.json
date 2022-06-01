@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\joan.net\\prueba\\webapi.csproj": {}
+    "C:\\Users\\Moons\\joan.net\\webapi\\webapi.csproj": {}
   },
   "projects": {
-    "C:\\joan.net\\prueba\\webapi.csproj": {
+    "C:\\Users\\Moons\\joan.net\\webapi\\webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\joan.net\\prueba\\webapi.csproj",
+        "projectUniqueName": "C:\\Users\\Moons\\joan.net\\webapi\\webapi.csproj",
         "projectName": "webapi",
-        "projectPath": "C:\\joan.net\\prueba\\webapi.csproj",
-        "packagesPath": "C:\\Users\\Joan-Sistemas\\.nuget\\packages\\",
-        "outputPath": "C:\\joan.net\\prueba\\obj\\",
+        "projectPath": "C:\\Users\\Moons\\joan.net\\webapi\\webapi.csproj",
+        "packagesPath": "C:\\Users\\Moons\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Moons\\joan.net\\webapi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Joan-Sistemas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Moons\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
