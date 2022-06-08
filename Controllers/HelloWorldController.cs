@@ -1,24 +1,34 @@
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace webapi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class HelloWorldController: ControllerBase{
-
-//private readonly ILogger<HelloWorldController> _logger;
-IHelloWorldService helloWorldService;
-
-public HelloWorldController(IHelloWorldService helloWorld)
+public class HelloWorldController:  ControllerBase
 {
-    helloWorldService = helloWorld;
+    IHelloWorldService helloWorldService;
 
-}
-[HttpGet]
-public IActionResult Get()
-{
-   // _logger.LogInformation("Retornando hello world");
-    return Ok(helloWorldService.GetHelloWorld());
-}
+    TareasContext dbcontext;
 
+    public HelloWorldController(IHelloWorldService helloWorld, TareasContext db)
+    {
+        helloWorldService = helloWorld;
+        dbcontext = db;
+    }
+
+    [HttpGet]
+    public IActionResult Get()
+    {
+        return Ok(helloWorldService.GetHelloWorld());
+    }
+
+    [HttpGet]
+    [Route("createdb")]
+    public IActionResult CreateDatabase()
+    {
+        dbcontext.Database.EnsureCreated();
+
+        return Ok();
+    }
 }
